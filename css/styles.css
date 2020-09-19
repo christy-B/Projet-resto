@@ -9,7 +9,7 @@ body {
 #header-nav {
   background-color:SeaGreen;
   border-radius: 0;
-  border: 0;
+  
 }
 
 
@@ -105,126 +105,77 @@ body {
   margin-top: 25px;
 }
 /* END FOOTER */
-
-
-
-/* HOME PAGE */
-.container .jumbotron {
-  box-shadow: 0 0 50px #3F0C1F;
-  border: 2px solid #3F0C1F;
-}
-
-#menu-tile, #specials-tile, #map-tile {
-  height: 250px;
-  width: 100%;
-  margin-bottom: 15px;
-  position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
-}
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
-#menu-tile {
-  background: url('../images/menu-tile.jpg') no-repeat;
-  background-position: center;
-}
-#specials-tile {
-  background: url('../images/specials-tile.jpg') no-repeat;
-  background-position: center;
-}
-#menu-tile span, #specials-tile span, #map-tile span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: .8;
-}
-/* END HOME PAGE */
-
 /* MENU CATEGORIES PAGE */
-.category-tile { 
-  position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 15px;
+#content, #dejeuner {
+  display:flex;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.category-tile span {
+.titre-menu{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.menu img:hover{
+  box-shadow: 3px 3px red, -1em 0 .4em olive;
+  }
+#content .menu h3{
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -12px;
+  background-color: rgb(0 0 0 );
   width: 100%;
   text-align: center;
-  font-size: 1.2em;
   text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
   opacity: .8;
+  color:white;
+  font-size: 1.2em;
+
 }
-.category-tile:hover {
+#content .menu {
+  position: relative;
+  margin-left: 50px;
+  margin-top: 30px;
+  border: 2px solid #000;
+
+}
+
+#content .menu:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 
-#menu-categories-title + div {
-  margin-bottom: 50px;
-}
 /* END MENU CATEGORIES PAGE */
 
-/* SINGLE CATEGORY PAGE */
-.menu-item-tile {
-  margin-bottom: 25px;
-}
-.menu-item-tile hr {
-  width: 80%;
-}
-.menu-item-tile .menu-item-price {
-  font-size: 1.1em;
-  text-align: right;
-  margin-top: -15px;
-  margin-right: -15px;
-}
-.menu-item-tile .menu-item-price span {
-  font-size: .6em;
-}
-.menu-item-photo {
-  position: relative;
-  border: 2px solid #3F0C1F; 
-  overflow: hidden;
-  padding: 0;
-  margin-right: -15px;
-  margin-left: auto;
-  margin-bottom: 20px;
-  max-width: 250px;
-}
-.menu-item-photo div {
+/* dejeuner */
+#dejeuner .menu_1 h5{
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 80px;
-  background-color: #557c3e;
-  text-align: center;
-}
-.menu-item-description {
-  padding-right: 30px;
-}
-h3.menu-item-title {
-  margin: 0 0 10px;
-}
-.menu-item-details {
-  font-size: .9em;
-  font-style: italic;
-}
-/* END SINGLE CATEGORY PAGE */
+  background-color: rgb(0 0 0 );
+  opacity: .8;
+  color:white;
+  font-size: 1em;
+  width: 100px;
+  margin-top: -50px;
 
+}
+#dejeuner .menu_1 h3{
+  position: absolute;
+  font-size: 1.5em;
+  margin-left: 220px;
+  top: -12px;
 
-/********** Large devices only **********/
+}
+#dejeuner .menu_1 img {
+  width: 200px;
+  border: 2px solid #000;
+}
+#dejeuner .menu_1{
+  position: relative;
+  margin-left:20px;
+  margin-top: 50px;
+  width: 450px;
+}
 @media (min-width: 1200px) {
  #main-content {
     background: url('../images/2.jpg') no-repeat;
@@ -250,7 +201,7 @@ h3.menu-item-title {
 @media (min-width: 768px) and (max-width: 991px) {
   /* Home Page */
    #main-content {
-    background: url('../images/.jpg') no-repeat;
+    background: url('../images/4.jpg') no-repeat;
     height: 432px;
   }
   /* End Home Page */
@@ -311,35 +262,4 @@ h3.menu-item-title {
   .panel-footer section hr {
     width: 50%;
   }
-  /* End Footer */
-
-  /* Home Page */
-
-
-/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
-  /* Header */
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 5px;
-    font-size: 6vw;
-  }
-  /* End Header */
   
-  /* Home page */
-  #menu-tile, #specials-tile {
-    width: 280px;
-    margin: 0 auto 15px;
-  }
-
-  .col-xxs-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    float: left;
-    width: 100%;
-  }
-}
-
-
-
